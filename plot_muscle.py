@@ -2,7 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # CSVファイルの読み込み
-filename = "muscle_response.csv"
+filename = "muscle_transition_test.csv"
 try:
     data = pd.read_csv(filename)
 except FileNotFoundError:
@@ -31,7 +31,7 @@ plt.legend(fontsize=12)
 plt.grid(True, linestyle=':', alpha=0.6)
 
 # 保存と表示
-plt.savefig("muscle_response_plot.png", dpi=300)
+plt.savefig("muscle_transition.png", dpi=300)
 print("Graph saved as muscle_response_plot.png")
 # GUI環境がある場合のみ表示
 # plt.show()
