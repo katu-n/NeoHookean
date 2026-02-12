@@ -29,9 +29,7 @@ private:
 
 public:
     IntegratedMuscleModel(PassiveType pt, ActiveMechanism am) : p_type(pt), a_mech(am) {
-        // --- パラメータ設定 (論文値を参考) ---
         mu = 755.5;       // Paetsch Table 1
-
         // Paetsch Passive
         mu_p = 86.13;
 
